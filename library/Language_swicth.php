@@ -3,6 +3,9 @@
 class language_swicth {
 	private $language_available =array('english','indonesia');
 	private $language_default ='english';
+	private $language_file =array('text');
+	//tambahkan di sini jika anda memiliki file bahasa,, misal email_lang.php
+	//private $language_file =array('text','email');
 	function __construct()
 	{
 		#parent::__construct();
@@ -34,7 +37,9 @@ class language_swicth {
 		}else{
 			$language=$session_lang_swicth ;
 		}
-		$CI->lang->load('text', $language);
-		//tambahkan di sini jika anda memiliki file bahasa,, misal email_lang.php
+		foreach ($language_file as $key) {
+			$CI->lang->load($key, $language);
+		}
+		
 	}
 }
