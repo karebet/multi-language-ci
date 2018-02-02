@@ -21,17 +21,17 @@ ikuti langkah-langkah berikut
 
 ## Setup
 bila Anda mempunyai bahasa lainnya, misal France, sediakan terlebih dahulu file language nya di folder `language/france/`
-### Mengatur kesediaan bahasa
+##### Mengatur kesediaan bahasa
 di file `library/language_swicth.php` 
 ```php
 private $language_available =array('english','indonesia');
 ````
-### Mengatur default bahasa
+##### Mengatur default bahasa
 di file `library/language_swicth.php` 
 ```php
 private $language_default ='english';
 ````
-### Load library
+##### Load library
 load library
 ```php
 $this->load->library('language_swicth');
