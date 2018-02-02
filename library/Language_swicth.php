@@ -35,9 +35,6 @@ class language_swicth {
 			$language=$session_lang_swicth ;
 		}
 		$CI->lang->load('text', $language);
-		$CI->lang->load('header_footer', $language);
-		if ($adaperubahan==true) {
-			$CI->session->set_flashdata('toast', $CI->lang->line('toast_change_language_swicth', FALSE));
-		}
+		//tambahkan di sini jika anda memiliki file bahasa,, misal email_lang.php
 	}
 }
