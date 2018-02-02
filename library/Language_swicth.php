@@ -18,17 +18,14 @@ class language_swicth {
 		$language = $this->language_default;
 		$language_swicthto = $CI->input->get($this->parameter_get);
 		$parametersessioninrun = $this->parametersession;
-		$adaperubahan=false;
 		if ($language_swicthto) {
 			if (in_array($language_swicthto, $this->language_available)) {
 				$CI->session->set_userdata( array('multilanguage'=> $language_swicthto));
-				$adaperubahan=true;
 			}
 		}
 		$session_lang_swicth = $CI->session->userdata($this->parametersession);
 		if (!$session_lang_swicth) {
 			$CI->session->set_userdata( array('multilanguage' => $language));
-			$adaperubahan=false;
 			$language=$this->language_default ;
 		}else{
 			$language=$session_lang_swicth ;
@@ -39,8 +36,6 @@ class language_swicth {
 				$CI->lang->load($key, $language);
 			}
 		}
-		if ($adaperubahan==true) {
-			$CI->session->set_flashdata('toast', $CI->lang->line('toast_change_language_swicth', FALSE));
-		}
+		
 	}
 }
