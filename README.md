@@ -32,6 +32,11 @@ di file `library/language_swicth.php`
 ```php
 private $language_default ='english';
 ````
+### Load library
+load library
+```php
+$this->load->library('language_swicth');
+````
 
 ## Cara menggunakan atau menjalankan
 ##### Cara seting ke bahasa
@@ -40,14 +45,12 @@ Anda bisa set bahasa dengan menggunakan parameter `GET`
 ##### Cara memangil
 ```php
 <?php 
-$this->load->library('language_swicth');
 lang('welcome'); 
 ?>
 ```
 ##### Cara dengan parameter
 ```php
 <?php 
-$this->load->library('language_swicth');
 lang('saysometing',array('Robeth','100')); 
 ?>
 ```
