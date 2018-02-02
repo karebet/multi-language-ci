@@ -25,9 +25,9 @@ Anda bisa set bahasa dengan menggunakan parameter `GET`
 `misal: localhost/ci-project/?language_swicthto=indonesia `
 ##### Cara memangil
 ```php
-<p> <?php lang('welcome'); ?> <p> ///
+<?php lang('welcome'); ?> ///
 ```
 ##### Cara dengan parameter
 ```php
-<p> <?php lang('saysometing',array('Robeth','100')); ?> <p> ///
+<?php lang('saysometing',array('Robeth','100')); ?> ///
 ```
