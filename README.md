@@ -20,8 +20,7 @@ ikuti langkah-langkah berikut
 - tambahkan `languageswicth` di file autoload.php `$autoload['helper'] = array('languageswicth');`
 
 ## Setup
-bila Anda mempunyai bahasa lainnya, misal France,
-sediakan terlebih dahulu file language nya di folder `language/france/`
+bila Anda mempunyai bahasa lainnya, misal France, sediakan terlebih dahulu file language nya di folder `language/france/`
 ### Mengatur kesediaan bahasa
 di file `library/language_swicth.php` 
 ```php
