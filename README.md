@@ -46,10 +46,15 @@ Anda bisa set bahasa dengan menggunakan parameter `GET`
 <?php 
 lang('welcome'); 
 ?>
+
+#english: Welcome in english
+#indonesia: Salam dalam bahasa
 ```
 ##### Cara dengan parameter
 ```php
 <?php 
 lang('saysometing',array('Robeth','100')); 
 ?>
+#english: Thanks you Robeth , now you have 100 poin
+#indonesia: Terimakasih Robeth , poin Anda sekarang 100
 ```
