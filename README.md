@@ -25,7 +25,7 @@ sediakan terlebih dahulu file language nya di folder `language/france/`
 ### Mengatur kesediaan bahasa
 di file `library/language_swicth.php` 
 ```php
-$language_available =array('english','indonesia');
+private $language_available =array('english','indonesia');
 ````
 ### Mengatur default bahasa
 di file `library/language_swicth.php` 
