@@ -19,15 +19,29 @@ ikuti langkah-langkah berikut
 - Copy file `languageswicth_helper.php` ke folder `application/helper`
 - tambahkan `languageswicth` di file autoload.php `$autoload['helper'] = array('languageswicth');`
 
+## Setup
+bila Anda mempunyai bahasa lainnya, misal France,
+sediakan terlebih dahulu file language nya di folder `language/france/`
+### Mengatur kesediaan bahasa
+di file `library/language_swicth.php` 
+```php
+$language_available =array('english','indonesia');
+````
+### Mengatur default bahasa
+di file `library/language_swicth.php` 
+```php
+private $language_default ='english';
+````
+
 ## Cara menggunakan atau menjalankan
 ##### Cara seting ke bahasa
 Anda bisa set bahasa dengan menggunakan parameter `GET` 
 `misal: localhost/ci-project/?language_swicthto=indonesia `
 ##### Cara memangil
 ```php
-<?php lang('welcome'); ?> ///
+<?php lang('welcome'); ?>
 ```
 ##### Cara dengan parameter
 ```php
-<?php lang('saysometing',array('Robeth','100')); ?> ///
+<?php lang('saysometing',array('Robeth','100')); ?>
 ```
