@@ -48,7 +48,7 @@ $this->load->library('language_swicth');
 ## Cara menggunakan atau menjalankan
 ##### Cara seting ke bahasa
 Anda bisa set bahasa dengan menggunakan parameter `GET` 
-`misal: localhost/ci-project/?language_swicthto=indonesia `
+`misal: localhost/ci-project/?lang=indonesia`
 ##### Cara memangil
 ```php
 <?php 
