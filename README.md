@@ -31,7 +31,7 @@ di file `library/language_swicth.php`
 ```php
 private $language_default ='english';
 ````
-##### Mengatur file language
+##### Mengatur file bahasa
 di file `library/language_swicth.php` 
 ```php
 private $language_file =array('text');
