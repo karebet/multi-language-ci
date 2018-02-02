@@ -1,4 +1,4 @@
-# multi-language-ci
+# Multi Language Codeigniter
 Library multi language codeigniter.
 disini saya asumsikan Anda sudah memiliki file `language/english/text_lang.php` dan `language/indonesia/text_lang.php`
 dengan masing-masing file berisi kunci bahasa dan isi dari kunci bahasa tersebut.
