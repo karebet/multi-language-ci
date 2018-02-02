@@ -1,7 +1,7 @@
 # multi-language-ci
 Library multi language codeigniter
 disini saya asumsikan Anda sudah memiliki file `language/english/text_lang.php` dan `language/indonesia/text_lang.php`
-dengan masing-masing file berisi kunci bahasa dan isi dari kunci bahasa
+dengan masing-masing file berisi kunci bahasa dan isi dari kunci bahasa tersebut.
 ```php
 //english
 $lang['welcome'] = 'Welcome in english';
@@ -20,8 +20,8 @@ ikuti langkah-langkah berikut
 - tambahkan `languageswicth` di file autoload.php `$autoload['helper'] = array('languageswicth');`
 
 ## Cara menggunakan atau menjalankan
-##### Cara setting ke bahasa
-Anda bisa set bahasa dengan menggunakan parameter `GET`
+##### Cara seting ke bahasa
+Anda bisa set bahasa dengan menggunakan parameter `GET` 
 `misal: localhost/ci-project/?language_swicthto=indonesia `
 ##### Cara memangil
 ```php
