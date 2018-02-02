@@ -3,12 +3,12 @@ Library multi language codeigniter.
 disini saya asumsikan Anda sudah memiliki file `language/english/text_lang.php` dan `language/indonesia/text_lang.php`
 dengan masing-masing file berisi kunci bahasa dan isi dari kunci bahasa tersebut.
 ```php
-//english
+#english/text_lang.php
 $lang['welcome'] = 'Welcome in english';
 $lang['saysometing'] = 'Thanks you %s , now you have %s poin';
 ```
 ```php
-//indonesia
+#indonesia/text_lang.php
 $lang['welcome'] = 'Salam dalam bahasa';
 $lang['saysometing'] = 'Terimakasih %s , poin Anda sekarang %s';
 ```
