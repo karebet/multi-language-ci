@@ -31,6 +31,14 @@ di file `library/language_swicth.php`
 ```php
 private $language_default ='english';
 ````
+##### Mengatur file language
+di file `library/language_swicth.php` 
+```php
+private $language_file =array('text');
+//bila mempunya file lain, misal bahasa untuk email_lang.php
+private $language_file =array('text','email');
+````
+
 ##### Load library
 load library
 ```php
